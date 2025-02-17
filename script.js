@@ -134,3 +134,10 @@
             addDispositivo.addEventListener("click", addDispositivoField);
             calcular.addEventListener("click", calcularTamanho);
         });
+
+
+        //login//
+        
+
+    
+

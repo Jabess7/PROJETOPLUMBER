@@ -3,55 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
-    
     <title>Projeto RW</title>
-   
+    <script src="script1.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #0056b3;
+        }
+
+        #resposta{
+            padding-top: 15px;
+            font-weight: 800;
+            display: none;
+            
+            
+        }
+    </style>
 </head>
 <body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Usuário" required id="username">
+            <input type="password" placeholder="Senha" required id="password">
+            <button type="button" id="entrar">Entrar</button>
 
-    <h1>Calculadora de Tamanho de Tubulação</h1>
 
-    <div class="section">
-        <label for="tipoImovel">Selecione o tipo de imóvel:</label>
-        <select id="tipoImovel">
-            <option value="0.50">Habitação unifamiliar ou bifamiliar</option>
-            <option value="0.35">Multi-residencial</option>
-            <option value="0.70">Hotel</option>
-            <option value="0.75">Escola Geral</option>
-            <option value="1.00">Casa de Banho</option>
-            <option value="0.45">Institucional Geral</option>
-            <option value="0.25">Assembléia Geral</option>
-            <option value="0.70">Restaurante, Café</option>
-            <option value="0.60">Casa do Clube</option>
-            <option value="0.25">Negócios Geral</option>
-            <option value="1.00">Lavandaria</option>
-            <option value="0.90">Industrial Exclusivo</option>
-        </select>
+        </form>
+
+        <div id="resposta">Usuario ou senha incorreta</div>
     </div>
-
-    <div class="section">
-        <h3>Adicione os dispositivos de água:</h3>
-        <div id="dispositivosContainer">
-            <button id="addDispositivo" type="button">Adicionar Dispositivo</button>
-        </div>
-    </div>
-
-    <table id="dispositivosTabela">
-        <tr>
-            <th>Dispositivo</th>
-            <th>Quantidade</th>
-            <th>Tipo</th>
-            <th>Fator</th>
-        </tr>
-    </table>
-
-    <div class="section">
-        <button id="calcular" type="button">Calcular</button>
-    </div>
-
-    <div id="resultado" class="result"></div>
-    
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scrip1.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Projeto RW </title>
+   
+</head>
+<body>
+
+    <h1>Calculadora de Tamanho de Tubulação</h1>
+
+    <div class="section">
+        <label for="tipoImovel">Selecione o tipo de imóvel:</label>
+        <select id="tipoImovel">
+            <option value="0.50">Habitação unifamiliar ou bifamiliar</option>
+            <option value="0.35">Multi-residencial</option>
+            <option value="0.70">Hotel</option>
+            <option value="0.75">Escola Geral</option>
+            <option value="1.00">Casa de Banho</option>
+            <option value="0.45">Institucional Geral</option>
+            <option value="0.25">Assembléia Geral</option>
+            <option value="0.70">Restaurante, Café</option>
+            <option value="0.60">Casa do Clube</option>
+            <option value="0.25">Negócios Geral</option>
+            <option value="1.00">Lavandaria</option>
+            <option value="0.90">Industrial Exclusivo</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <h3>Adicione os dispositivos de água:</h3>
+        <div id="dispositivosContainer">
+            <button id="addDispositivo" type="button">Adicionar Dispositivo</button>
+        </div>
+    </div>
+
+    <table id="dispositivosTabela">
+        <tr>
+            <th>Dispositivo</th>
+            <th>Quantidade</th>
+            <th>Tipo</th>
+            <th>Fator</th>
+        </tr>
+    </table>
+
+    <div class="section">
+        <button id="calcular" type="button">Calcular</button>
+    </div>
+
+    <div id="resultado" class="result"></div>
+    
+</body>
+</html>
