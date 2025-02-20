@@ -19,7 +19,7 @@ function validarLogin() {
     }
 
     // Verifica se o usuário e senha estão corretos
-    else if (usuario === "jabes" && senha === "12345678") {
+    else if (usuario == "jabes" && senha === "12345678") {
         // Redireciona para login.html
         window.location.href = "login.html";
     } else {
